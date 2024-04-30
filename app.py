@@ -7,8 +7,7 @@ st.title('Chat with your AI Assistant!')
 
 
 message = st.chat_message('Assistant')
-message.write('Hello, Saeed!')
-message.write('How can I help you today?')
+message.write('Hello, How can I help you today?')
 
 #initialize the chat history
 if 'chat_history' not in st.session_state:
