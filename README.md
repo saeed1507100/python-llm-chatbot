@@ -1,16 +1,25 @@
 # python-llm-chatbot
 A simple chatbot web-app in Python using LLM
 
-## Install the required dependencies:
+# Deploy locally
 
-```bash
+## 1. Add Environment variable
+Add a .env file with hugging face api key like:
+```
+HUGGINGFACEHUB_API_TOKEN = "hf_...."
+```
+to get your own hugging face hub api key, follow the instructions at: [get-your-api-token](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
+
+## 2. Install requirements
+```
 pip install -r requirements.txt
 ```
 
-Open a terminal in the project directory & run the following command:
-
-```bash
-streamlit run main.py
+## 3. Run the app with streamlit
+```
+streamlit run app.py
 ```
 
-This will launch the Streamlit app in your web browser. You can also access the app using: http://localhost:8501/
+# Demo of the app
+
+[python-llm-chatbot](https://python-llm-chatbot.streamlit.app/)
